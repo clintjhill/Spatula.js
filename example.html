@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title>Spatula.js Example</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="spatula.js"></script>
+	<script>
+		spatula.preload(['sample-view-1.html', 'sample-view-2.html'], function(){
+			spatula.get('sample-view-1.html', function(template){
+				console.log(template);
+			});
+			console.log(spatula.cache['sample-view-2.html']);
+		});
+	</script>
+</head>
+<body>
+<p>Open the Console to view the results of this JavaScript.</p>
+</body>
+</html>
